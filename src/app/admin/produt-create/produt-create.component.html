@@ -1,0 +1,11 @@
+<mat-card class="example-card">
+    <mat-card-title>adicionar novo produto</mat-card-title>
+    <form class="form-group" [formGroup]="formulario">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Digite o nome do produto</mat-label>
+          <input matInput formControlName="nome">
+        </mat-form-field>
+      </form>
+      <button mat-button (click)="adicionarProduto()">Adicionar</button>
+      <button mat-button (click)="cancelarAcao()">Cancelar</button>
+  </mat-card>
