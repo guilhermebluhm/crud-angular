@@ -25,7 +25,7 @@ export class ProdutCreateComponent {
   }
 
   cancelarAcao(){
-    this.roteamento.navigate([''],{relativeTo: this.posicaoAtual})
+    this.roteamento.navigate(['auth-login'])
   }
 
 }

@@ -39,7 +39,7 @@ export class ProdutEditComponent implements OnInit{
   }
 
   retornar(){
-    this.rota.navigate([''],{relativeTo: this.posicaoRota})
+    this.rota.navigate(['auth-login'])
   }
 
 }

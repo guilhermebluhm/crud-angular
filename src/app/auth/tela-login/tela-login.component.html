@@ -1,0 +1,18 @@
+<mat-card class="example-card">
+    <mat-card-title>Login</mat-card-title>
+    <mat-card-content>
+      <form [formGroup]="form">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Credencial</mat-label>
+            <input matInput formControlName="login" 
+            placeholder="nome de usuario" type="text" required>
+          </mat-form-field><br>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password" 
+            placeholder="senha para autenticacao" required type="password">
+          </mat-form-field><br>
+          <button mat-raised-button color="primary" (click)="acaoLogin()">Login</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
